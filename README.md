@@ -1,2 +1,2 @@
 # PocketGym
-A fitness activity and calory tracker .
+A fitness activity and calorie tracker .
