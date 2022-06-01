@@ -257,8 +257,6 @@ class PersonnelProfile(User):
 
    def get_id(self):
       pass
-
-
    def get_type(self):
       pass
 
