@@ -245,7 +245,7 @@ KV = '''
                         halign: "right"
                         valign: "middle"
                     Label:
-                        text: '[b]Καύση:[/b] 233 cal'
+                        text: '[b]Καύση:[/b] 364 cal'
                         markup: True
                         color: 0,0,0, 0.6
                         text_size: self.size
