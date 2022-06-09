@@ -30,7 +30,7 @@ KV = '''
 
             Label:
                 text: 'Ιστορικό'
-                color: 0.8,0.3,0.9, 1
+                color: 0.15,0.12,0.54, 1
                 font_size: '34sp'
                 text_size: self.size
                 size_hint: (1, 1)
