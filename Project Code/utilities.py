@@ -31,28 +31,28 @@ class User:
     self.email = email
     self.user_id = user_id
     self.user_type = user_type
-  def error_check():
+  def error_check(self):
       pass
-  def connect():
+  def connect(self):
       pass
-  def create_account():
+  def create_account(self):
       pass   
-  def forgot_password():
+  def forgot_password(self):
       pass 
-  def log_in():
+  def log_in(self):
       pass
-  def log_out():
+  def log_out(self):
       pass
-  def change_email():
+  def change_email(self):
       pass
-  def view_profile():
+  def view_profile(self):
       pass   
-  def delete_account():
+  def delete_account(self):
       pass 
-  def contact_support():
+  def contact_support(self):
       pass
 
-  def discount_wait():
+  def discount_wait(self):
       pass
 
 
@@ -68,32 +68,32 @@ class Profile(User):
       self.gender = gender 
       self.height = height
 
-   def biometric_check():
+   def biometric_check(self):
       pass
 
-   def upload_image():
+   def upload_image(self):
       pass
 
-   def spell_check():
+   def spell_check(self):
       pass
 
-   def completion_check():
+   def completion_check(self):
       pass
 
-   def change_weight():
+   def change_weight(self):
       pass
 
-   def change_height():
+   def change_height(self):
       pass
 
-   def change_goals():
+   def change_goals(self):
       pass
 
    def calculate_bmi(weight,height):
       BMI = weight / (height/100)**2
       return bmi
 
-   def report():
+   def report(self):
       pass
 
 
@@ -104,15 +104,15 @@ class UserActivity():
       self.calories = calories 
       self.type1 = type1
       self.difficulty = difficulty
-   def track():
+   def track(self):
       pass
-   def stop_track():
+   def stop_track(self):
       pass
-   def get_id():
+   def get_id(self):
       pass
-   def return_id():
+   def return_id(self):
       pass
-   def add_to_history():
+   def add_to_history(self):
       pass
 
 class History():
@@ -120,15 +120,15 @@ class History():
       self.achievements = achievements
       self.completedprogram = completedprogram
       self.completedactivity = completedactivity
-   def update():
+   def update(self):
       pass
-   def delete_workout():
+   def delete_workout(self):
       pass
-   def view_graph():
+   def view_graph(self):
       pass
-   def download_history():
+   def download_history(self):
       pass
-   def share_achievements():
+   def share_achievements(self):
       pass
 
 class AutoProgram(Profile):
@@ -151,10 +151,10 @@ class AutoProgram(Profile):
          z = model2(X)
       return z 
 
-   def add_to_user():
+   def add_to_user(self):
       pass
 
-   def add_to_history():
+   def add_to_history(self):
       pass
 
 
@@ -176,11 +176,11 @@ class PremiumUser(Profile,User):
       self.enddate = enddate
       self.diet = diet
       self.trainningprogram = trainningprogram
-   def cancel_membership():
+   def cancel_membership(self):
       pass
-   def renew_membership():
+   def renew_membership(self):
       pass
-   def premium_tour():
+   def premium_tour(self):
       pass
 
 
@@ -188,11 +188,11 @@ class Subscription():
    def __init__(self,price,duration):
       self.price = price
       self.duration = duration
-   def buy():
+   def buy(self):
       pass 
-   def gift():
+   def gift(self):
       pass 
-   def refund():
+   def refund(self):
       pass
 
 
@@ -212,23 +212,23 @@ class PersonnelProfile(User):
       self.hire_date = hire_date
       self.salary = salary
 
-   def availability_check():
+   def availability_check(self):
       pass
 
-   def assign():
+   def assign(self):
       pass
 
-   def view_as_user():
+   def view_as_user(self):
       pass
 
-   def contact_admin():
+   def contact_admin(self):
       pass
 
-   def get_id():
+   def get_id(self):
       pass
 
 
-   def get_type():
+   def get_type(self):
       pass
 
 
@@ -250,10 +250,10 @@ class Dietician(PersonnelProfile):
    def delete_request(request_id):
       pass
 
-   def create_program():
+   def create_program(self):
       pass
 
-   def send_program():
+   def send_program(self):
       pass
 
 
@@ -265,22 +265,22 @@ class DietPlan():
         self.user_id = user_id
         self.personnel_id =  personnel_id
     
-    def show_details(request_id):
+    def show_details(self,request_id):
         pass
     
-    def create_diet():
+    def create_diet(self):
         pass
     
-    def send_to(user_id):
+    def send_to(self,user_id):
         pass
     
-    def send_request_delete_msg(user_id):
+    def send_request_delete_msg(self,user_id):
         pass
     
-    def request_input():
+    def request_input(self):
         pass
     
-    def edit_program():
+    def edit_program(self):
         pass
     
     
@@ -291,11 +291,11 @@ class Trainer(PersonnelProfile):
       self.personal_trainer_id = personal_trainer_id
    def delete_request(request_id):
       pass
-   def create_program():
+   def create_program(self):
       pass
-   def send_program(user_id):
+   def send_program(self,user_id):
       pass
-   def edit_program():
+   def edit_program(self):
       pass
 
 class PersonalProgram():
@@ -306,12 +306,12 @@ class PersonalProgram():
       self.personnel_id = personnel_id
       self.user_id = user_id
 
-   def get_user_id():
+   def get_user_id(self):
       pass
    
    def show_details(request_id):
       pass 
-   def create_activity():
+   def create_activity(self):
       pass      
    def delete_request(request_id):
       pass
@@ -319,9 +319,9 @@ class PersonalProgram():
       pass
    def send_request_delete_msg(user_id):
       pass
-   def request_input():
+   def request_input(self):
       pass 
-   def create_program():
+   def create_program(self):
       pass 
 
 class Request():
@@ -330,18 +330,18 @@ class Request():
       self.request_type = request_type 
       self.content = content
 
-   def get_sub_status():
+   def get_sub_status(self):
       pass
 
-   def submit():
+   def submit(self):
       pass
-   def send_accept_msg_to():
-      pass
-
-   def send_decline_msg_to():
+   def send_accept_msg_to(self):
       pass
 
-   def data_check():
+   def send_decline_msg_to(self):
+      pass
+
+   def data_check(self):
       pass
 
 class DieticianRequest(Request):
@@ -352,21 +352,21 @@ class DieticianRequest(Request):
       self.biometrics = biometrics
       self.preferences = preferences
 
-   def get_biometrics():
+   def get_biometrics(self):
       pass
-   def show_summary():
+   def show_summary(self):
       pass
-   def create_request():
+   def create_request(self):
       pass
-   def add_to_requests():
+   def add_to_requests(self):
       pass
-   def get_biometric_stats():
+   def get_biometric_stats(self):
       pass
-   def info_check():
+   def info_check(self):
       pass
-   def create_biometrics():
+   def create_biometrics(self):
       pass
-   def request_input():
+   def request_input(self):
       pass
 
 class PersTrainRequest(Request):
@@ -377,21 +377,21 @@ class PersTrainRequest(Request):
       self.biometrics = biometrics
       self.preferences = preferences
 
-   def get_biometrics():
+   def get_biometrics(self):
       pass
-   def show_summary():
+   def show_summary(self):
       pass
-   def create_request():
+   def create_request(self):
       pass
-   def add_to_requests():
+   def add_to_requests(self):
       pass
-   def get_biometric_stats():
+   def get_biometric_stats(self):
       pass
-   def info_check():
+   def info_check(self):
       pass
-   def create_biometrics():
+   def create_biometrics(self):
       pass
-   def request_input():
+   def request_input(self):
       pass
 
 class LiveCallRequest(Request):
@@ -404,18 +404,18 @@ class LiveCallRequest(Request):
    def show_summary(request_id):
       pass
 
-   def create_request():
+   def create_request(self):
       pass
 
-   def add_to_requests():
+   def add_to_requests(self):
       pass
 
-   def request_input():
+   def request_input(self):
       pass
 
-   def get_availability():
+   def get_availability(self):
       pass
-   def assign_to(personnel_id):
+   def assign_to(self,personnel_id):
       pass
 
 
@@ -429,9 +429,9 @@ class Blogger(PersonnelProfile):
       self.blogger_id = blogger_id
    def create_article():
       pass
-   def delete_article(article_id):
+   def delete_article(self,article_id):
       pass
-   def edit_article(article_id):
+   def edit_article(self,article_id):
       pass
 
 class Article():
@@ -445,15 +445,15 @@ class Article():
       self.description = description
       self.article_id = article_id
 
-   def create_article():
+   def create_article(self):
       pass
-   def error_check():
+   def error_check(self):
       pass
-   def publish():
+   def publish(self):
       pass
-   def error_highlight():
+   def error_highlight(self):
       pass
-   def edit_article():
+   def edit_article(self):
       pass
       
 class Moderator():
@@ -461,15 +461,15 @@ class Moderator():
       User.__init__(self,username, password, email , user_id, user_type)
       PersonnelProfile.__init__(self,personnel_id,profiletype,name,surname,afm,amka,phone,address,payment_details,hire_date,salary)
       self.moderator_id = moderator_id
-   def view_report(report_id):
+   def view_report(self,report_id):
       pass
-   def inspect_report(report_id):
+   def inspect_report(self,report_id):
       pass
-   def remove():
+   def remove(self):
       pass
-   def allow():
+   def allow(self):
       pass
-   def ban(user_id):
+   def ban(self,user_id):
       pass
 
 class Reports():
@@ -483,29 +483,29 @@ class Reports():
       self.api_type = api_type
       self.api_results = call_api()
 
-   def api_call():
+   def api_call(self):
       pass
-   def content_check():
+   def content_check(self):
       pass
-   def judge(api_results):
+   def judge(self,api_results):
       pass
-   def delete_content(post_id,message_id):
+   def delete_content(self,post_id,message_id):
       pass
-   def move_for_approval(report_id):
+   def move_for_approval(self,report_id):
       pass
-   def show_details(report_id):
+   def show_details(self,report_id):
       pass
-   def get_report_content():
+   def get_report_content(self):
       pass
-   def get_content():
+   def get_content(self):
       pass
-   def send_to():
+   def send_to(self):
       pass
-   def delete_report(report_id):
+   def delete_report(self,report_id):
       pass
-   def input_duration():
+   def input_duration(self):
       pass
-   def ban(user_id):
+   def ban(self,user_id):
       pass
 
 
@@ -518,29 +518,29 @@ class Message():
       self.recipient_id = recipient_id
       self.message_date = message_date
       self.friendlist = friendlist
-   def message_send(recipient_id):
+   def message_send(self,recipient_id):
       pass
-   def send_to(recipient_id):
+   def send_to(self,recipient_id):
       pass
-   def create_message():
+   def create_message(self):
       pass
-   def edit_message():
+   def edit_message(self):
       pass
-   def delete_message():
+   def delete_message(self):
       pass
-   def report():
+   def report(self):
       pass
-   def forward_message():
+   def forward_message(self):
       pass
-   def create_conversation(recipient_id):
+   def create_conversation(self,recipient_id):
       pass
-   def open_conversation(conversation_id):
-      pass
-
-   def show_friendlist():
+   def open_conversation(self,conversation_id):
       pass
 
-   def close_friendlist():
+   def show_friendlist(self):
+      pass
+
+   def close_friendlist(self):
       pass
 
 class Post():
@@ -553,21 +553,21 @@ class Post():
       self.date = date 
       self.user_id = user_id 
 
-   def invitation():
+   def invitation(self):
       pass
-   def edit_post(post_id):
+   def edit_post(self,post_id):
       pass
-   def like(post_id):
+   def like(self,post_id):
       pass
-   def comment(post_id):
+   def comment(self,post_id):
       pass
-   def delete(post_id):
+   def delete(self,post_id):
       pass
-   def pin(post_id):
+   def pin(self,post_id):
       pass
-   def report(post_id):
+   def report(self,post_id):
       pass
-   def publish():
+   def publish(self):
       pass
 
 class Share():
@@ -578,11 +578,11 @@ class Share():
       self.share_type = share_type
       self.share_post_id = share_post_id
 
-   def add_share():
+   def add_share(self):
       pass
-   def edit_share():
+   def edit_share(self):
       pass
-   def delete_share():
+   def delete_share(self):
       pass
 
 
@@ -591,9 +591,9 @@ class UserFeed():
    def __init__(self,user_id,post_id):
       self.user_id = user_id 
       self.post_id = post_id 
-   def refresh():
+   def refresh(self):
       pass
-   def view():
+   def view(self):
       pass
 
 
@@ -609,30 +609,30 @@ class Friends():
       self.friend_name = friend_name 
       self.friend_username = friend_username
 
-   def add_friend(user_id):
+   def add_friend(self,user_id):
       pass
 
-   def edit_friends():
+   def edit_friends(self):
       pass
 
-   def delete_friends():
+   def delete_friends(self):
       pass
 
-   def search_friends():
+   def search_friends(self):
       pass
 
 class NewsBlog():
    def __init__(self):
       pass 
-   def like():
+   def like(self):
       pass
-   def comment():
+   def comment(self):
       pass
-   def delete():
+   def delete(self):
       pass
-   def pin():
+   def pin(self):
       pass
-   def report():
+   def report(self):
       pass
 
 
