@@ -179,6 +179,15 @@ class Entry(Screen):
     def on_profile(self):
         print('You hit profile')
 
+    def on_new_activity(self):
+        print('You hit profile')
+
     def on_history(self):
         print('You hit history')
         self.app.manager.current = 'history'
+    
+    def on_premium(self):
+        print('You hit profile')
+
+    def on_settings(self):
+        print('You hit profile')
