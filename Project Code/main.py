@@ -11,6 +11,7 @@ Clock.max_iteration = 20
 import entry
 import history
 
+# This module creates our main App, using python library kivy 
 
 __version__ = 'v0.2'
 
@@ -56,9 +57,13 @@ SCR_SELECTOR='''
 
 Builder.load_string(SCR_SELECTOR)
 
+# For developing convenience we use a Screen Selector
 
 class PGScreenSelector(GridLayout):
     pass
+
+
+# Creation of the App
 
 class PGAppKV(MDApp):
 
