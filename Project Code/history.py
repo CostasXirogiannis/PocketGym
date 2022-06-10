@@ -303,3 +303,16 @@ BoxLayout:
 
         PGScreenSelector:
 '''
+
+Builder.load_string(KV)
+
+
+class History(Screen):
+
+    def __init__(self, app=None, **kwargs):
+        super().__init__(**kwargs)
+        self.app = app
+
+    def on_back(self):
+        print('You hit history')
+        self.app.manager.current = 'entry'
