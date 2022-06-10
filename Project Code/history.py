@@ -44,11 +44,4 @@ KV = '''
                 pos_hint: {'center_x': 0.05, 'center_y': 0.5}
                 on_press: root.on_back()
 
-        BoxLayout:
-            orientation: 'vertical'
-            size_hint: 1, 0.9
-
-            BoxLayout:
-                orientation: 'horizontal'
-                size_hint: 1, 0.2
-                padding: (5,5,5,5)
+       
