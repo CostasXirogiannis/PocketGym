@@ -6,13 +6,7 @@ import pandas as pd
 import time
 
 
-window=Tk()
-# add widgets here
-window.iconbitmap(r'logo-modified.ico')
-window.title('Pocket Gym')
-#window.aspect(1,1,1,1)
-window.geometry("350x600+10+20")
-window.configure(bg='white')
+
 def not_working():
    text.config(text= "Not Working yet")
 
