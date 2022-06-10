@@ -28,20 +28,6 @@ KV = '''
                 Line:
                     points: self.x, self.y, self.x+self.width,self.y
 
-            Label:
-                text: 'Ιστορικό'
-                color: 0.8,0.3,0.9, 1
-                font_size: '34sp'
-                text_size: self.size
-                size_hint: (1, 1)
-                halign: "center"
-                valign: "middle"
-
-            MDIconButton:
-                icon: 'arrow-left'
-                #md_bg_color: (0,0,0,0.1)
-                user_font_size: '20sp'
-                pos_hint: {'center_x': 0.05, 'center_y': 0.5}
-                on_press: root.on_back()
+           
 
        
