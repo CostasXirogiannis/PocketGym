@@ -1,6 +1,9 @@
 from kivy.lang import Builder
 from kivy.uix.screenmanager import Screen
 
+
+# This is the entry screen, which user will see when opening the app
+
 KV = '''
 #: import Window kivy.core.window.Window
 
@@ -170,6 +173,8 @@ KV = '''
 Builder.load_string(KV)
 
 
+# Methods that are being used by the entry screen
+
 class Entry(Screen):
 
     def __init__(self, app=None, **kwargs):
@@ -180,14 +185,14 @@ class Entry(Screen):
         print('You hit profile')
 
     def on_new_activity(self):
-        print('You hit profile')
+        print('You hit new activity')
 
     def on_history(self):
         print('You hit history')
         self.app.manager.current = 'history'
     
     def on_premium(self):
-        print('You hit profile')
+        print('You hit premium')
 
     def on_settings(self):
-        print('You hit profile')
+        print('You hit settings')
