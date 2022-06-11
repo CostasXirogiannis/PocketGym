@@ -55,6 +55,46 @@ SCR_SELECTOR='''
         #theme_text_color: 'Custom'
         text_color: 1,1,0, 1
         on_ref_press: app.manager.current = 'welcome'
+    #Label:    
+        #text: "[ref=history]History[/ref]"
+        #markup: True
+        #theme_text_color: 'Custom'
+        #text_color: 1,1,0, 1
+        #on_ref_press: app.manager.current = 'welcome'
+    #Label:    
+        #text: "[ref=history]History[/ref]"
+        #markup: True
+        #theme_text_color: 'Custom'
+        #text_color: 1,1,0, 1
+        #on_ref_press: app.manager.current = 'welcome'
+    #Label:    
+        #text: "[ref=history]History[/ref]"
+        #markup: True
+        #theme_text_color: 'Custom'
+        #text_color: 1,1,0, 1
+        #on_ref_press: app.manager.current = 'welcome'
+    #Label:    
+        #text: "[ref=history]History[/ref]"
+        #markup: True
+        #theme_text_color: 'Custom'
+        #text_color: 1,1,0, 1
+        #on_ref_press: app.manager.current = 'welcome'
+    #Label:    
+        #text: "[ref=history]History[/ref]"
+        #markup: True
+        #theme_text_color: 'Custom'
+        #text_color: 1,1,0, 1
+        #on_ref_press: app.manager.current = 'welcome'
+    #Label:
+        #text: "[ref=history]History[/ref]"
+        #markup: True
+        #theme_text_color: 'Custom'
+        #text_color: 1,1,0, 1
+        #on_ref_press: app.manager.current = 'welcome'
+        
+        
+        
+        
 '''
 
 Builder.load_string(SCR_SELECTOR)
