@@ -39,18 +39,21 @@ KV = '''
                 Rectangle:
                     pos: self.pos
                     size: self.size
+
             Label:
-                pos_hint: {'center_x': 0.5, 'center_y': 0.2}
+                pos_hint: {'center_x': 0.5, 'center_y': 0.1}
                 text: 'Welcome!'
                 color: 0.15,0.12,0.54, 1
                 halign: 'center'
                 text_size: self.size
                 font_size: '20sp'
-                size_hint: 1, 0.1
+                size_hint: 1, 0.2
 
             GridLayout:
                 cols: 2
-                padding: (0,0,0,0)
+                padding: (0,0,100,0)
+                size_hint: 1, 0.3
+                spacing: dp(40)
                 
                 canvas:
                     Color:
@@ -60,54 +63,73 @@ KV = '''
                     pos_hint: {'center_x': 0.1, 'center_y': 0.3}
                     text: 'Εισάγετε Όνομα:'
                     color: 0,0,0, 0.7
-                    halign: 'center'
+                    halign: 'right'
                     text_size: self.size
                     font_size: '15sp'
-                    size_hint: 1, 0.1
+                    size_hint: 0.3, 1
 
-                TextInput:
-                    pos_hint: {'center_x': 0.5, 'center_y': 0.3}
-                    size_hint: (0.7, None)
-                    height: 30
-                    halign: 'left'
-                    multiline: False
+                MDTextFieldRound:
+                    id: name
+                    normal_color: .8, .8, .8, .8
+
+                #TextInput:
+                    #pos_hint: {'center_x': 0.5, 'center_y': 0.3}
+                    #size_hint: (0.7, None)
+                    #height: 30
+                    #halign: 'left'
+                    #multiline: False
 
                 Label:
                     pos_hint: {'center_x': 0.1, 'center_y': 0.4}
                     text: 'Εισάγετε Κωδικό:'
                     color: 0,0,0, 0.7
-                    halign: 'center'
+                    halign: 'right'
                     text_size: self.size
                     font_size: '15sp'
-                    size_hint: 1, 0.1
+                    size_hint: 0.3, 1
 
-                TextInput:
-                    pos_hint: {'center_x': 0.5, 'center_y': 0.4}
-                    size_hint: (.7, None)
-                    height: 30
-                    halign: 'left'
-                    multiline: False
+                MDTextFieldRound:
+                    id: password
+                    icon_right: "key"
+                    helper_text: "Password"
+                    password: True
+                    normal_color: .8, .8, .8, .8
+
+                #TextInput:
+                    #pos_hint: {'center_x': 0.5, 'center_y': 0.4}
+                    #size_hint: (.7, None)
+                    #height: 30
+                    #halign: 'left'
+                    #multiline: False
                     
-            GridLayout:
-                cols: 2
-                padding: (0,0,0,0)
+            BoxLayout:
+                spacing: 10
+                size_hint: 1, 0.5
                 
                 canvas:
                     Color:
                         rgba: 0.85,0.85,0.85, 1
 
                 MDIconButton:
+                    canvas:
+                        Color:
+                            rgba: 0.95,0,0, 0.5
+
                     icon: 'information-outline'
                     user_font_size: '30sp'
-                    pos_hint: {'center_x': 0.05, 'center_y': 0.9}
+                    valign: 'center'
 
-                Label:
-                    pos_hint: {'center_x': 0.5, 'center_y': 0.9}
-                    text: 'About'
-                    color: 0,0,0, 0.7
-                    halign: 'center'
-                    font_size: '20sp'
-                    size_hint: 1, 0.1
+                #Label:
+                    #canvas:
+                        #Color:
+                            #rgba: 0,0.95,0, 0.5
+
+                    #text: 'About'
+                    #color: 0,0,0, 0.7
+                    #halign: 'center'
+                    #font_size: '20sp'
+                    #size_hint: 0.7, 1
+                    #pos_hint: {'center_x': 0.5, 'center_y': 0.5}
 
         PGScreenSelector:
 '''
