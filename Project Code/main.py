@@ -9,6 +9,7 @@ from kivy.clock import Clock
 Clock.max_iteration = 20
 
 import entry
+import welcome
 import history
 
 # This module creates our main App, using python library kivy 
@@ -49,10 +50,11 @@ SCR_SELECTOR='''
         text_color: 1,1,0, 1
         #on_release: app.manager.current = 'entry'
     Label:
-        text: 'Scr5'
+        text: "[ref=history]History[/ref]"
+        markup: True
         #theme_text_color: 'Custom'
         text_color: 1,1,0, 1
-        #on_release: app.manager.current = 'entry'
+        on_ref_press: app.manager.current = 'welcome'
 '''
 
 Builder.load_string(SCR_SELECTOR)
@@ -76,6 +78,7 @@ class PGAppKV(MDApp):
         self.title = None
         self.manager = None
         self.entry_scr = None
+        self.welcome_scr = None
         self.history_scr = None
 
     def build(self):
@@ -86,6 +89,8 @@ class PGAppKV(MDApp):
         self.manager.add_widget(self.entry)
         self.history = history.History(app=self, name='history')
         self.manager.add_widget(self.history)
+        self.welcome = welcome.Welcome(app=self, name='welcome')
+        self.manager.add_widget(self.welcome)
 
         return self.manager
 
