@@ -180,19 +180,28 @@ class Entry(Screen):
     def __init__(self, app=None, **kwargs):
         super().__init__(**kwargs)
         self.app = app
-
+    
+    #Η μέθοδος αυτή θα εκτελεστεί αν ο χρήστης πατήσει στο κουμπί "Προφίλ"
     def on_profile(self):
         print('You hit profile')
 
+
+    #Η μέθοδος αυτή θα εκτελεστεί αν ο χρήστης πατήσει στο κουμπί "Νέα Δραστηριότητα"
     def on_new_activity(self):
         print('You hit new activity')
 
+
+    #Η μέθοδος αυτή θα εκτελεστεί αν ο χρήστης πατήσει στο κουμπί "Ιστορικό"
     def on_history(self):
         print('You hit history')
         self.app.manager.current = 'history'
     
+    
+    #Η μέθοδος αυτή θα εκτελεστεί αν ο χρήστης πατήσει στο κουμπί "Premium"
     def on_premium(self):
         print('You hit premium')
 
+
+    #Η μέθοδος αυτή θα εκτελεστεί αν ο χρήστης πατήσει στο κουμπί "Ρυθμίσεις"
     def on_settings(self):
         print('You hit settings')
