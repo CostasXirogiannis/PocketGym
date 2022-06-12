@@ -184,7 +184,31 @@ KV = '''
                     #pos_hint: {'center_x': 0.05, 'center_y': 0.5}
 
                 #Label:
-                    #text: 'Νέα δραστηριότητα'
+                    #text: 'extra'
+                    #color: 0,0,0, 0.7
+                    #text_size: self.size
+                    #size_hint: (1, 1)
+                    #halign: "left"
+                    #valign: "middle"
+
+            #BoxLayout:
+                #spacing: 10
+
+                #canvas.before:
+                    #Color:
+                        #rgba: 0.85,0.85,0.85, 1
+                    #Line:
+                        #points: self.x, self.y, self.x+self.width,self.y
+
+                #orientation: 'horizontal'
+                #MDIconButton:
+                    #icon: 'plus-thick'
+                    #md_bg_color: (0,0,0,0.1)
+                    #user_font_size: '20sp'
+                    #pos_hint: {'center_x': 0.05, 'center_y': 0.5}
+
+                #Label:
+                    #text: 'extra2'
                     #color: 0,0,0, 0.7
                     #text_size: self.size
                     #size_hint: (1, 1)
