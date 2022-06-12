@@ -129,3 +129,14 @@ KV = '''
 
         PGScreenSelector:
 '''
+
+Builder.load_string(KV)
+
+
+# Methods that are being used by the welcome screen
+
+class Welcome(Screen):
+
+    def __init__(self, app=None, **kwargs):
+        super().__init__(**kwargs)
+        self.app = app
