@@ -13,4 +13,4 @@ KV = '''
         cols: 1
         size: Window.size
         padding: (0,0,0,0)
-        spacing: 1
+        spacing: 10
