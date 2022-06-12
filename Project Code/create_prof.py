@@ -28,3 +28,21 @@ KV = '''
             halign: 'center'
             font_size: '34sp'
             size_hint: 1, 0.1
+
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint: 1, 0.9
+            padding: (5,5,5,5)
+
+            canvas:
+                Color:
+                    rgba: 0.95,0.95,0.95, 0.5
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+
+            GridLayout:
+                cols: 2
+                padding: (0,20,100,0)
+                size_hint: 1, 0.3
+                spacing: dp(40)
