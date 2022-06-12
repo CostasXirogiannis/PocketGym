@@ -46,3 +46,26 @@ KV = '''
                 padding: (0,20,100,0)
                 size_hint: 1, 0.3
                 spacing: dp(40)
+
+                canvas:
+                    Color:
+                        rgba: 0.85,0.85,0.85, 1
+                Label:
+                    pos_hint: {'center_x': 0.1, 'center_y': 0.2}
+                    text: 'Avatar:'
+                    color: 0,0,0, 0.7
+                    halign: 'right'
+                    valign: 'center'
+                    text_size: self.size
+                    font_size: '15sp'
+                    size_hint: 0.3, 1
+
+                MDIconButton:
+                    canvas:
+                        Color:
+                            rgba: 0.95,0,0, 0.51
+
+                    icon: 'camera-plus-outline'
+                    user_font_size: '60sp'
+                    valign: 'center'
+                    halign: 'center'
