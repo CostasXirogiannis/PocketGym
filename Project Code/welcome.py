@@ -123,7 +123,7 @@ KV = '''
                     #text: 'About'
                     #color: 0,0,0, 0.7
                     #halign: 'center'
-                    #font_size: '200sp'
+                    #font_size: '20sp'
                     #size_hint: 0.7, 1
                     #pos_hint: {'center_x': 0.5, 'center_y': 0.5}
 
