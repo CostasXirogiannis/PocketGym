@@ -6,6 +6,8 @@ from kivymd.icon_definitions import md_icons
 from kivymd.app import MDApp
 from kivymd.uix.list import OneLineIconListItem
 
+#This is a python script that we used in PocketGym for icon search and usage purposes, found in kivy website
+
 
 Builder.load_string(
     '''
