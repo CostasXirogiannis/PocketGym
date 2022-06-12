@@ -60,7 +60,7 @@ KV = '''
                 Label:
                     pos_hint: {'center_x': 0.1, 'center_y': 0.3}
                     text: 'Εισάγετε Όνομα:'
-                    color: 0,0,0, 0.9
+                    color: 0,0,0, 0.7
                     halign: 'right'
                     text_size: self.size
                     font_size: '15sp'
