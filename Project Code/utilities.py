@@ -7,10 +7,10 @@ import time
 
 
 
-def not_working():
-   text.config(text= "Not Working yet")
+def not_working():  #Temporary class for things that havent been worked on yet.
+   text.config(text= "Not Working yet")   
 
-class Model(nn.Module):
+class Model(nn.Module):  #Class gia to neurwniko p 8a paragei to auto program
     def __init__(self, in_features=4, h1=25, h2=50, out_features=1): #in features = weight,height,age,gender out=exercise
         super().__init__()
         self.fc1 = nn.Linear(in_features, h1)  # input layer
@@ -23,7 +23,7 @@ class Model(nn.Module):
         x = self.out(x)
         return x
 
-class User:
+class User: #vasikh class user .
   def __init__(self, username, password, email , user_id, user_type):
 
     self.username = username
@@ -31,11 +31,11 @@ class User:
     self.email = email
     self.user_id = user_id
     self.user_type = user_type
-  def error_check(self):
+  def error_check(self):  #function pou 8a elegxei gia la8h se diafora pedia p prepei na plhktrologisei o user kata thn eggrafh tou
       pass
-  def connect(self):
+  def connect(self):  #function gia connect sth db
       pass
-  def create_account(self):
+  def create_account(self): #create account function.
       pass   
   def forgot_password(self):
       pass 
