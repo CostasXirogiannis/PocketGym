@@ -23,7 +23,7 @@ KV = '''
         Label:
             pos_hint: {'center_x': 0.5, 'center_y': 0.5}
             text: 'PocketGym'
-            color: 0.15,0.12,0.54, 2
+            color: 0.15,0.12,0.54, 1
             halign: 'center'
             font_size: '34sp'
             size_hint: 1, 0.1
