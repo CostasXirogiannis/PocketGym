@@ -47,3 +47,21 @@ KV = '''
                 text_size: self.size
                 font_size: '20sp'
                 size_hint: 1, 0.2
+         GridLayout:
+                cols: 2
+                padding: (0,0,100,0)
+                size_hint: 1, 0.3
+                spacing: dp(40)
+                
+                canvas:
+                    Color:
+                        rgba: 0.85,0.85,0.85, 1
+
+                Label:
+                    pos_hint: {'center_x': 0.1, 'center_y': 0.3}
+                    text: 'Εισάγετε Όνομα:'
+                    color: 0,0,0, 0.9
+                    halign: 'right'
+                    text_size: self.size
+                    font_size: '15sp'
+                    size_hint: 0.3, 3
