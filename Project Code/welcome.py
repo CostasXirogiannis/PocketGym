@@ -75,3 +75,18 @@ KV = '''
                     #height: 30
                     #halign: 'left'
                     #multiline: False
+                Label:
+                    pos_hint: {'center_x': 0.1, 'center_y': 0.4}
+                    text: 'Εισάγετε Κωδικό:'
+                    color: 0,0,0, 0.7
+                    halign: 'right'
+                    text_size: self.size
+                    font_size: '15sp'
+                    size_hint: 0.3, 7
+
+                MDTextFieldRound:
+                    id: password
+                    icon_right: "key"
+                    helper_text: "Password"
+                    password: True
+                    normal_color: .8, .8, .8, .8
