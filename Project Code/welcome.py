@@ -64,4 +64,4 @@ KV = '''
                     halign: 'right'
                     text_size: self.size
                     font_size: '15sp'
-                    size_hint: 0.3, 3
+                    size_hint: 0.3, 1
