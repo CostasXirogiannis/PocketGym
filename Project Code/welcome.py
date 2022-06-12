@@ -65,3 +65,13 @@ KV = '''
                     text_size: self.size
                     font_size: '15sp'
                     size_hint: 0.3, 1
+                MDTextFieldRound:
+                    id: name
+                    normal_color: .8, .8, .8, .8
+
+                #TextInput:
+                    #pos_hint: {'center_x': 0.5, 'center_y': 0.3}
+                    #size_hint: (0.7, None)
+                    #height: 30
+                    #halign: 'left'
+                    #multiline: False
