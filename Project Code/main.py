@@ -13,7 +13,9 @@ import create_prof
 import welcome
 import history
 
-# This module creates our main App, using python library kivy 
+# This module creates our main App, using python library kivy, as well as kivyMD 
+
+# For developing convenience we use a Screen Selector
 
 __version__ = 'v0.2'
 
@@ -106,7 +108,6 @@ SCR_SELECTOR='''
 
 Builder.load_string(SCR_SELECTOR)
 
-# For developing convenience we use a Screen Selector
 
 class PGScreenSelector(GridLayout):
     pass
