@@ -118,7 +118,7 @@ KV = '''
                 #Label:
                     #canvas:
                         #Color:
-                            #rgba: 0,0.95,0, 0.6
+                            #rgba: 0,0.95,0, 0.5
 
                     #text: 'About'
                     #color: 0,0,0, 0.7
