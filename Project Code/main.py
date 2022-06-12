@@ -9,6 +9,7 @@ from kivy.clock import Clock
 Clock.max_iteration = 20
 
 import entry
+import create_prof
 import welcome
 import history
 
@@ -33,10 +34,10 @@ SCR_SELECTOR='''
         #theme_text_color: 'Custom'
         text_color: 1,1,0, 1
         on_ref_press: app.manager.current = 'entry'
-    Label:
-        text: 'Scr2'
+    #Label:
+        #text: 'Scr2'
         #theme_text_color: 'Custom'
-        text_color: 1,1,0, 1
+        #text_color: 1,1,0, 1
         #on_release: app.manager.current = 'entry'
     Label:
         text: "[ref=history]History[/ref]"
@@ -44,17 +45,23 @@ SCR_SELECTOR='''
         #theme_text_color: 'Custom'
         text_color: 1,1,0, 1
         on_ref_press: app.manager.current = 'history'
-    Label:
-        text: 'Scr4'
+    #Label:
+        #text: 'Scr4'
         #theme_text_color: 'Custom'
-        text_color: 1,1,0, 1
-        #on_release: app.manager.current = 'entry'
+        #text_color: 1,1,0, 1
+        #on_release: app.manager.current = 'create_prof'
     Label:
         text: "[ref=history]History[/ref]"
         markup: True
         #theme_text_color: 'Custom'
         text_color: 1,1,0, 1
         on_ref_press: app.manager.current = 'welcome'
+    Label:
+        text: "[ref=create_prof]Create_prof[/ref]"
+        markup: True
+        #theme_text_color: 'Custom'
+        text_color: 1,1,0, 1
+        on_ref_press: app.manager.current = 'create_prof'
     #Label:    
         #text: "[ref=history]History[/ref]"
         #markup: True
@@ -118,6 +125,7 @@ class PGAppKV(MDApp):
         self.title = None
         self.manager = None
         self.entry_scr = None
+        self.create_prof_scr = None
         self.welcome_scr = None
         self.history_scr = None
 
@@ -131,6 +139,8 @@ class PGAppKV(MDApp):
         self.manager.add_widget(self.history)
         self.welcome = welcome.Welcome(app=self, name='welcome')
         self.manager.add_widget(self.welcome)
+        self.create_prof = create_prof.Create_prof(app=self, name='create_prof')
+        self.manager.add_widget(self.create_prof)
 
         return self.manager
 
