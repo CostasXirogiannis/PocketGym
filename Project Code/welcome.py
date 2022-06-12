@@ -101,3 +101,17 @@ KV = '''
             BoxLayout:
                 spacing: 10
                 size_hint: 1, 0.5
+                
+                canvas:
+                    Color:
+                        rgba: 0.85,0.85,0.85, 1
+
+                MDIconButton:
+                    canvas:
+                        Color:
+                            rgba: 0.95,0,0, 0.5
+
+                    icon: 'information-outline'
+                    user_font_size: '30sp'
+                    valign: 'center'
+
