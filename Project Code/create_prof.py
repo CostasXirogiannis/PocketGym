@@ -69,3 +69,95 @@ KV = '''
                     user_font_size: '60sp'
                     valign: 'center'
                     halign: 'center'
+
+                Label:
+                    pos_hint: {'center_x': 0.1, 'center_y': 0.3}
+                    text: 'Ονομα:'
+                    color: 0,0,0, 0.7
+                    halign: 'right'
+                    text_size: self.size
+                    font_size: '15sp'
+                    size_hint: 0.3, 1
+
+                MDTextFieldRound:
+                    id: name
+                    normal_color: .8, .8, .8, .8
+
+                Label:
+                    pos_hint: {'center_x': 0.1, 'center_y': 0.4}
+                    text: 'Επίθετο:'
+                    color: 0,0,0, 0.7
+                    halign: 'right'
+                    text_size: self.size
+                    font_size: '15sp'
+                    size_hint: 0.3, 1
+
+                MDTextFieldRound:
+                    id: surname
+                    normal_color: .8, .8, .8, .8
+
+                Label:
+                    pos_hint: {'center_x': 0.1, 'center_y': 0.3}
+                    text: 'Ηλικία:'
+                    color: 0,0,0, 0.7
+                    halign: 'right'
+                    text_size: self.size
+                    font_size: '15sp'
+                    size_hint: 0.3, 1
+
+                MDTextFieldRound:
+                    id: name
+                    normal_color: .8, .8, .8, .8
+
+                Label:
+                    pos_hint: {'center_x': 0.1, 'center_y': 0.4}
+                    text: 'Φύλο:'
+                    color: 0,0,0, 0.7
+                    halign: 'right'
+                    text_size: self.size
+                    font_size: '15sp'
+                    size_hint: 0.3, 1
+
+                MDTextFieldRound:
+                    id: surname
+                    normal_color: .8, .8, .8, .8
+
+                Label:
+                    pos_hint: {'center_x': 0.1, 'center_y': 0.3}
+                    text: 'Ύψος:'
+                    color: 0,0,0, 0.7
+                    halign: 'right'
+                    text_size: self.size
+                    font_size: '15sp'
+                    size_hint: 0.3, 1
+
+                MDTextFieldRound:
+                    id: name
+                    normal_color: .8, .8, .8, .8
+
+                Label:
+                    pos_hint: {'center_x': 0.1, 'center_y': 0.4}
+                    text: 'Βάρος:'
+                    color: 0,0,0, 0.7
+                    halign: 'right'
+                    text_size: self.size
+                    font_size: '15sp'
+                    size_hint: 0.3, 1
+
+                MDTextFieldRound:
+                    id: surname
+                    normal_color: .8, .8, .8, .8
+
+        PGScreenSelector:
+'''
+
+Builder.load_string(KV)
+
+
+# Methods that are being used by the create_prof screen
+
+class Create_prof(Screen):
+
+    def __init__(self, app=None, **kwargs):
+        super().__init__(**kwargs)
+        self.app = app
