@@ -63,7 +63,7 @@ KV = '''
                 MDIconButton:
                     canvas:
                         Color:
-                            rgba: 0.95,0,0, 0.51
+                            rgba: 0.95,0,0, 0.5
 
                     icon: 'camera-plus-outline'
                     user_font_size: '60sp'
