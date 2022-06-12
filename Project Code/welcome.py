@@ -90,3 +90,14 @@ KV = '''
                     helper_text: "Password"
                     password: True
                     normal_color: .8, .8, .8, .8
+                
+                #TextInput:
+                    #pos_hint: {'center_x': 0.5, 'center_y': 0.4}
+                    #size_hint: (.7, None)
+                    #height: 30
+                    #halign: 'left'
+                    #multiline: False
+                    
+            BoxLayout:
+                spacing: 10
+                size_hint: 1, 0.5
