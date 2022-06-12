@@ -45,5 +45,5 @@ KV = '''
                 color: 0.15,0.12,0.54, 1
                 halign: 'center'
                 text_size: self.size
-                font_size: '210sp'
+                font_size: '20sp'
                 size_hint: 1, 0.2
