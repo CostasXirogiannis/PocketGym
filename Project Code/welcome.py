@@ -115,3 +115,17 @@ KV = '''
                     user_font_size: '30sp'
                     valign: 'center'
 
+                #Label:
+                    #canvas:
+                        #Color:
+                            #rgba: 0,0.95,0, 0.5
+
+                    #text: 'About'
+                    #color: 0,0,0, 0.7
+                    #halign: 'center'
+                    #font_size: '200sp'
+                    #size_hint: 0.7, 1
+                    #pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+
+        PGScreenSelector:
+'''
